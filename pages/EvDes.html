@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/CSS/evdes.css">
+  <title>Evaluación del Desempeño</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Evaluación del Desempeño</h1>
+    <p>Evalue al empleado según lo planteado y tomando en cuenta que 1 es la peor calificación, y 10 la mejor.</p>
+
+    <form id="evaluacionForm">
+      <label for="puntualidad">Puntualidad: ¿Con qué frecuencia el empleado llega puntualmente al trabajo o cumple con los plazos establecidos?</label>
+      <input type="number" id="puntualidad" name="puntualidad" min="1" max="10" required>
+
+      <label for="actitud">Actitud: ¿Cómo describirías la actitud general del empleado hacia sus tareas y colegas?</label>
+      <input type="number" id="actitud" name="actitud" min="1" max="10" required>
+
+      <label for="cumplimientoTareas">Cumplimiento de tareas: ¿En qué medida el empleado cumple con las responsabilidades y tareas asignadas?</label>
+      <input type="number" id="cumplimientoTareas" name="cumplimientoTareas" min="1" max="10" required>
+
+      <label for="trabajoEquipo">Trabajo en equipo: ¿Cómo calificarías la colaboración y el trabajo en equipo del empleado?</label>
+      <input type="number" id="trabajoEquipo" name="trabajoEquipo" min="1" max="10" required>
+
+      <label for="iniciativa">Iniciativa: ¿Con qué frecuencia el empleado toma la iniciativa para abordar problemas o mejorar procesos?</label>
+      <input type="number" id="iniciativa" name="iniciativa" min="1" max="10" required>
+
+      <label for="adaptabilidad">Adaptabilidad: ¿Con qué facilidad el empleado se adapta a cambios en las circunstancias laborales o en las tareas asignadas?</label>
+      <input type="number" id="adaptabilidad" name="adaptabilidad" min="1" max="10" required>
+
+      <label for="comunicacion">Comunicación: ¿Cómo evaluarías las habilidades de comunicación del empleado, tanto verbal como escrita?</label>
+      <input type="number" id="comunicacion" name="comunicacion" min="1" max="10" required>
+
+      <label for="productividad">Productividad: En una escala del 1 al 10, ¿cómo calificarías la productividad general del empleado?</label>
+      <input type="number" id="productividad" name="productividad" min="1" max="10" required>
+
+      <label for="calidadTrabajo">Calidad del trabajo: ¿En qué medida el trabajo del empleado cumple con los estándares de calidad establecidos?</label>
+      <input type="number" id="calidadTrabajo" name="calidadTrabajo" min="1" max="10" required>
+
+      <label for="relacionesInterpersonales">Relaciones interpersonales: ¿Cómo calificarías la capacidad del empleado para construir relaciones efectivas con colegas y superiores?</label>
+      <input type="number" id="relacionesInterpersonales" name="relacionesInterpersonales" min="1" max="10" required>
+
+      <!-- Agregar más preguntas aquí -->
+      <!-- Cumplimiento de tareas, Trabajo en equipo, Iniciativa, Adaptabilidad, Comunicación, Productividad, Calidad del trabajo, Relaciones interpersonales -->
+
+      <button type="button" onclick="calificarEmpleado()">Calificar</button>
+    </form>
+
+    <div id="mensajeCalificacion" style="display: none;">
+      <p id="mensajeTexto"></p>
+    </div>
+  </div>
+
+  <script src="/assets/SCRIPTS/evdes.js"></script>
+</body>
+</html>
